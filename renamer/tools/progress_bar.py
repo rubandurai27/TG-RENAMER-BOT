@@ -26,12 +26,9 @@ async def progress_bar(current, total, status_msg, start, msg):
 {progressbar}
 
  **Speed**🚀: {humanbytes(speed)}/s
-
  **Done**✅: {humanbytes(current)}
-
-**Size**🌀: {humanbytes(total)}
-
-**Time Left🕰**: {time_to_complete}"""
+ **Size**🌀: {humanbytes(total)}
+ **Time Left🕰**: {time_to_complete}"""
         try:
             await msg.edit(text=current_message)
         except:
